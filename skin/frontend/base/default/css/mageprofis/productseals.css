@@ -1,0 +1,13 @@
+.product-seals:after {
+    display:table;
+    content:'';
+    clear:both;
+}
+.product-seals .seal {
+    float:left;
+    margin-right:8px;
+    margin-bottom:8px;
+}
+.product-seals .seal:last-child {
+    margin-right:0;
+}

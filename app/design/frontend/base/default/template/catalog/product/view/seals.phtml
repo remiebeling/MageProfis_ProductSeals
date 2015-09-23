@@ -1,0 +1,15 @@
+<?php
+/* @var $this MageProfis_ProductSeals_Block_Seals */
+$_helper = $this->helper('catalog/output');
+$_product = $this->getProduct();
+$_seals = $this->getSeals();
+?>
+<?php if (count($_seals) > 0): ?>
+    <div class="product-seals">
+        <?php foreach ($_seals as $_seal): ?>
+            <div class="seal">
+                <img src="<?php echo $_seal['image']; ?>" width="58" height="58" title="<?php echo $_seal['alt']; ?>" alt="<?php echo $_seal['alt']; ?>"/>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
